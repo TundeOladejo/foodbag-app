@@ -19,6 +19,17 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+#### `Important notice on running test`
+
+After you run `npm test` or `npm run test` in your terminal, all the tests available under `__test__` folder will run automatically. You will probably be getting error messages since you are yet to work on the component file for the test. To prevent these errors and to run a test at a time;
+
+1. In your terminal where you are running the test, press `w` to list out the watch usage options
+2. Press `p` to filter by a filename regex pattern.
+3. Type the file name of the test you want to run. **Note that the available tests are under the `__test__` folder**
+4. Type `App.test.js` **Note that a filtered result will be returned** 
+5. Press enter to select `App.test.js` **Test will now run for only App.js file**
+6. You can repeat this process for other js file.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
